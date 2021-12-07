@@ -317,6 +317,6 @@ public class Solver {
      */
     @Override
     public int hashCode() {
-        return (int) (mathematicalExpression.length() * 170 - Math.round(answer));
+        return (int) ((mathematicalExpression.length() + answer) * (mathematicalExpression.length() + answer));
     }
 }
